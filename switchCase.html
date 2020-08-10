@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài 1:
+    <br><button onclick="bai1()">Run</button>
+    <br><br><br><br> Bài 2:
+    <br><button onclick="bai2()">Run</button>
+    <br><br><br><br> Bài 3:
+    <br><button onclick="bai3()">Runnn</button>
+
+</body>
+
+</html>
+<script>
+    function bai1() {
+        let browser = prompt("")
+
+        switch (browser) {
+            case 'Edge':
+                alert("You have got the Edge!")
+                break;
+            case 'Chrome':
+            case "fileFox":
+            case 'Safari':
+            case "Opera":
+                alert('we suport these browers too');
+                break;
+            default:
+                alert("We hope that web look ok!!");
+        }
+    }
+
+    function bai2() {
+        let a = prompt("nhap a", '');
+
+        switch (a) {
+            case 0:
+                alert("0");
+                break;
+            case 1:
+                alert('1');
+            case 2:
+            case 3:
+                alert('2 or 3');
+                break;
+        }
+    }
+
+    function bai3() {
+        let value = prompt("nhap số: ", 0);
+
+        // if (value > 0) {
+        //     alert('1');
+        // } else if (value < 0) {
+        //     alert('-1');
+        // } else {
+        //     alert('0');
+        // }
+        let isTrue = value < 0;
+        if (value == 0) {
+            isTrue = 0;
+        }
+        switch (isTrue) {
+            case true:
+                alert('-1');
+                break;
+            case false:
+                alert('1');
+                break;
+            default:
+                alert('0')
+        }
+    }
+</script>
